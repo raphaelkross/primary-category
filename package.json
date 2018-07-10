@@ -1,0 +1,40 @@
+{
+	"name": "tenup-primary-category",
+	"version": "1.0.0",
+	"description": "Allows editors to set a primary category to posts.",
+	"scripts": {
+		"test": "eslint assets --ext js",
+		"bundle": "webpack"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/raphaelkross/primary-category.git"
+	},
+	"keywords": [
+		"wp"
+	],
+	"author": "Rafael Angeline",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/raphaelkross/primary-category/issues"
+	},
+	"homepage": "https://github.com/raphaelkross/primary-category#readme",
+	"dependencies": {},
+	"devDependencies": {
+		"@types/jquery": "^3.3.4",
+		"awesome-typescript-loader": "^5.2.0",
+		"eslint": "^4.19.1",
+		"eslint-config-wordpress": "^2.0.0",
+		"eslint-plugin-wordpress": "^0.1.0",
+		"prettier": "1.12.0",
+		"prettier-eslint": "^8.8.1",
+		"source-map-loader": "^0.2.3",
+		"typescript": "^2.9.2",
+		"webpack": "^4.15.1",
+		"webpack-cli": "^3.0.8"
+	},
+	"engineStrict": true,
+	"engines": {
+		"node": "~8.11"
+	}
+}

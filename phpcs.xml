@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress Coding Standards">
+	<description>A custom set of code standard rules to check for WordPress projects.</description>
+
+	<!-- Show colors in console -->
+	<arg value="-colors"/>
+
+	<!-- Show sniff codes in all reports -->
+	<arg value="s"/>
+
+	<!-- Ignore node_modules and vendor folder -->
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*/assets/*</exclude-pattern>
+
+	<!-- Check all files in this directory and the directories below it. -->
+	<file>.</file>
+
+	<rule ref="WordPress"/>
+
+	<!-- Verify that the text_domain is set to the desired text-domain.
+		 Multiple valid text domains can be provided as a comma-delimited list. -->
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="string" value="tenup-primary-category"/>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress-Core"/>
+	<rule ref="WordPress-Docs"/>
+</ruleset>

@@ -1,0 +1,22 @@
+{
+  "name": "10up/tenup-primary-category",
+  "description": "10up Primary Category",
+  "authors": [
+    {
+      "name": "Rafael Angeline",
+      "email": "me@rafaelangeline.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "TenUpPrimaryCategory\\": "includes/classes/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "6.5.8",
+    "10up/wp_mock": "dev-dev"
+  }
+}
