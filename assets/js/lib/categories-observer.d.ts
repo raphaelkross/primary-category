@@ -15,6 +15,10 @@ declare class CategoriesObserver {
      */
     private categoriesSelector;
     /**
+     * Selector to Categories areas (All and Most Used).
+     */
+    private categoriesAllSelector;
+    /**
      * Selector to Primary Category metabox.
      */
     private primaryCategorySelector;

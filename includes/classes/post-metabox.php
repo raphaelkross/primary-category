@@ -90,7 +90,7 @@ class PostMetabox {
 		<?php wp_nonce_field( '_tenup_primary_category_nonce', 'tenup_primary_category_nonce' ); ?>
 		<p>
 			<select name="tenup_primary_category_the_category" class="postform" style="width: 100%;">
-				<option value=""></option>
+				<option value=""><?php esc_html_e( 'Select a category...', 'tenup-primary-category' ); ?></option>
 				<?php echo wp_kses( $this->get_options(), array( 'option' => array( 'value' => array(), 'selected' => array() )) ); ?>
 			</select>
 		</p>

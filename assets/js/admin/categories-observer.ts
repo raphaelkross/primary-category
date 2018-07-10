@@ -23,6 +23,11 @@ class CategoriesObserver {
 	private categoriesSelector: string = '#categorychecklist';
 
 	/**
+	 * Selector to Categories areas (All and Most Used).
+	 */
+	private categoriesAllSelector: string = '#categorychecklist, #categorychecklist-pop';
+
+	/**
 	 * Selector to Primary Category metabox.
 	 */
 	private primaryCategorySelector: string = '#tenup-primary-category select';
@@ -75,7 +80,7 @@ class CategoriesObserver {
 		const localRemoveCategory = this.removeCategory.bind(this);
 
 		// When a category is checked or unchecked, we must add or remove from <select>
-		jQuery( this.categoriesSelector ).on( 'click', 'label', function( event: JQueryEventObject ) {
+		jQuery( this.categoriesAllSelector ).on( 'click', 'label', function( event: JQueryEventObject ) {
 			const label = jQuery(this);
 			const radio = jQuery(this).find('input');
 
