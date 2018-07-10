@@ -69,8 +69,7 @@ function admin_init() {
 function script_url( $script, $context ) {
 
 	if ( ! in_array( $context, [ 'admin', 'frontend', 'shared' ], true ) ) {
-		error_log( 'Invalid $context specfied in TenUpPrimaryCategory script loader.' );
-		return '';
+		return new WP_Error( 'broke', 'Invalid $context specfied in TenUpPrimaryCategory script loader.' );
 	}
 
 	return TENUP_PRIMARY_CATEGORY_URL . "dist/js/${context}.bundle.js" ;

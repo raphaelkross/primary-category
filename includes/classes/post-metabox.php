@@ -91,7 +91,7 @@ class PostMetabox {
 		<p>
 			<select name="tenup_primary_category_the_category" class="postform" style="width: 100%;">
 				<option value=""><?php esc_html_e( 'Select a category...', 'tenup-primary-category' ); ?></option>
-				<?php echo wp_kses( $this->get_options(), array( 'option' => array( 'value' => array(), 'selected' => array() )) ); ?>
+				<?php echo wp_kses( $this->get_options(), array( 'option' => array( 'value' => array(), 'selected' => array() ) ) ); ?>
 			</select>
 		</p>
 		<p class="howto" id="new-tag-post_tag-desc">
